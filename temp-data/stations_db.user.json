@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "66ccc3e8f13abdeb44f70cf2"
+  },
+  "username": "shuli",
+  "password": "$2b$10$EHYWgwiR9k9Yd6B3reJ7PODibKhfW/p4lvlgH44rR.9nBeDriIsai",
+  "fullname": "shuli",
+  "imgUrl": "",
+  "isAdmin": false,
+  "email": "shuli@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "66d777890f42299cac3c1a58"
+  },
+  "fullname": "Yael",
+  "username": "Yael",
+  "password": "$2b$10$zY0phT8iwzvnhieflk1ap.rMPYLXHCCD/QOY2ZmP/IqcDJr9EO8.S",
+  "email": "Yael@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66d84ca1534359cf3ca66c0f"
+  },
+  "fullname": "Beni",
+  "username": "beni",
+  "password": "$2b$10$Ri3Tgv6nUBTkGbMZD3s2euKuC9.xIt1QGgSG1ZtTs9KBhr5TeFvOq",
+  "email": "beni@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66ddf8554f4bc0964f122909"
+  },
+  "fullname": "oshra",
+  "username": "oshra",
+  "password": "$2b$10$F7uUFgvVfizpMbmMaqXsFevoOyZcky9j/l54d5UHfIIv4wWGhzbmi",
+  "email": "oshra.greenblat@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66df1403bb19824b88af5226"
+  },
+  "fullname": "ronit",
+  "username": "ronit",
+  "password": "$2b$10$Yq0WPSsNkUaQFSF6qAlQ0eOn9fs6QkzbhBn68WzeVSCYb/je/a6r2",
+  "email": "ronit@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66e0823b0702477ef322fc0b"
+  },
+  "fullname": "Avi",
+  "username": "avi",
+  "password": "$2b$10$TZ15cRko5dGQzNEyxnGSuuYB0x655eo85gUXcP1aPGu06QNE5gKWO",
+  "email": "avi@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66e08ac1acb7287183a765aa"
+  },
+  "fullname": "shlomi",
+  "username": "shlomi",
+  "password": "$2b$10$Y5c854hcQwiPJm2e5wvEBee2ORdLSe1ws7UIJ1QNZQbeVRB6KT9Fe",
+  "email": "shlomi@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66e0a6dc90750ac55240770c"
+  },
+  "fullname": "Dor Wein",
+  "username": "dor",
+  "password": "$2b$10$XngOR30B0l9T/nQ6RzmnSOZ1rJ50iHHcUN/iS7rGBvcbyrz7giZWW",
+  "email": "dor@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+},
+{
+  "_id": {
+    "$oid": "66e17d3fe3dfdb2595618775"
+  },
+  "fullname": "eitan",
+  "username": "eitan",
+  "password": "$2b$10$6N8ddWlENs7lTgCjw89fAO/wzHpobwivY.0wpR2aPs4nDBlADEG0a",
+  "email": "eitan@gmail.com",
+  "imgUrl": "",
+  "isAdmin": false
+}]
