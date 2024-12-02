@@ -1,6 +1,5 @@
-import { dbService } from "./services/db.service.js";
 import fs from 'fs'
-import { Users } from './temp-data/stations_db.user.json' assert {type:'json'}
+import { Users } from './temp-data/stations_db.user.json' assert {type: 'json'}
 
 async function setUsers() {
     // const users = fs.readFileSync(Users)
