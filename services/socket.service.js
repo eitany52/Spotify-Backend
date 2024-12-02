@@ -1,4 +1,3 @@
-import { logger } from './logger.service.js'
 import { Server } from 'socket.io'
 
 let gIo = null
@@ -20,28 +19,12 @@ export function setupSocketAPI(http) {
             socket.leave('watchedStation' + stationId)
         })
 
-        socket.on('chat-set-topic', topic => {
-            if (socket.myTopic === topic) return
-            if (socket.myTopic) {
-                socket.leave(socket.myTopic)
-            }
-            socket.join(topic)
-            socket.myTopic = topic
-        })
-        socket.on('chat-send-msg', msg => {
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
-            gIo.to(socket.myTopic).emit('chat-add-msg', msg)
-        })
-
         socket.on('set-user-socket', userId => {
             socket.userId = userId
         })
         socket.on('unset-user-socket', () => {
             delete socket.userId
         })
-
     })
 }
 
@@ -56,8 +39,6 @@ async function emitToUser({ type, data, userId }) {
 
     if (socket) {
         socket.emit(type, data)
-    } else {
-        // _printSockets()
     }
 }
 
@@ -102,15 +83,6 @@ async function _getAllSockets() {
     // return all Socket instances
     const sockets = await gIo.fetchSockets()
     return sockets
-}
-
-async function _printSockets() {
-    const sockets = await _getAllSockets()
-    console.log(`Sockets: (count: ${sockets.length}):`)
-    sockets.forEach(_printSocket)
-}
-function _printSocket(socket) {
-    console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`)
 }
 
 export const socketService = {
