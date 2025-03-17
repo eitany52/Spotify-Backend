@@ -7,8 +7,12 @@ import cookieParser from 'cookie-parser'
 import { authRoutes } from './api/auth/auth.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
 import { stationRoutes } from './api/station/station.routes.js'
+import { youtubeRoutes } from './api/youtube/youtube.routes.js'
 import { setupSocketAPI } from './services/socket.service.js'
 import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
+
+import dotenv from 'dotenv'
+dotenv.config()
 
 const app = express()
 const server = http.createServer(app)
@@ -36,6 +40,7 @@ app.all('*', setupAsyncLocalStorage)
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/station', stationRoutes)
+app.use('/api/youtube', youtubeRoutes)
 
 setupSocketAPI(server)
 

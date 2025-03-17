@@ -62,7 +62,6 @@ async function remove(stationId) {
         logger.error(`cannot remove station ${stationId}`, err)
         throw err
     }
-}
 
 async function add(station) {
     try {
