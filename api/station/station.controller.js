@@ -72,7 +72,7 @@ export async function updateStation(req, res) {
 			room: "watchedStation" + updatedStation._id,
 			userId: loggedInUser._id
 		})
-
+		// If the station owner added a new song and NOT REMOVED a song
 		if (updatedStation.songs.length > previousStation.songs.length) {
 			socketService.emitTo({
 				type: "song-added",
